@@ -135,6 +135,18 @@ await test("CTA sociaux sécurisés", async () => {
   }
 });
 
+await test("CTA WhatsApp présents au début et à la fin", async () => {
+  const whatsappUrl = "https://chat.whatsapp.com/FvljvfdBcVw9Z75004lXId?s=cl&amp;p=i&amp;ilr=2";
+  const occurrences = html.split(whatsappUrl).length - 1;
+  assert.equal(occurrences, 2, "Le lien du groupe WhatsApp doit apparaître exactement deux fois");
+  assert.match(html, /hero-actions[\s\S]*button-whatsapp/);
+  assert.match(html, /footer-actions[\s\S]*button-whatsapp/);
+  for (const match of html.matchAll(/<a[^>]+chat\.whatsapp\.com[^>]+>/g)) {
+    assert.match(match[0], /target="_blank"/);
+    assert.match(match[0], /rel="noopener noreferrer"/);
+  }
+});
+
 await test("Dossier Module 06 complet", async () => {
   await Promise.all(module06Files.map((file) => access(join(packRoot, file))));
 });
