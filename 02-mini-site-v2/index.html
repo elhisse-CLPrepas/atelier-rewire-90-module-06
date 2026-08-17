@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="REWIRE-90-PROJECT : landing page dynamique du programme de M. Mohamed BOUMRAH et cas réel des Modules 05 et 06 LN-IA.">
+  <meta name="theme-color" content="#07335f">
+  <title>REWIRE-90-PROJECT — Mini-site V2 dynamique</title>
+  <link rel="icon" href="assets/images/logo-rewire.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#contenu">Aller au contenu</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#accueil" aria-label="REWIRE-90-PROJECT, retour à l’accueil">
+        <img src="assets/images/logo-rewire.svg" alt="" width="58" height="58">
+        <span><strong>REWIRE-90</strong><small>Révéler · Construire · Installer</small></span>
+      </a>
+      <button class="menu-button" type="button" aria-expanded="false" aria-controls="main-nav">Menu</button>
+      <nav id="main-nav" class="main-nav" aria-label="Navigation principale">
+        <a href="#accueil">Accueil</a>
+        <a href="#projet-auteur">Projet</a>
+        <a href="#ressources">Ressources</a>
+        <a href="#methode">Méthode</a>
+        <a href="#validation">Validation</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenu">
+    <section id="accueil" class="hero" aria-labelledby="hero-title">
+      <div class="container hero-grid">
+        <div>
+          <p id="hero-eyebrow" class="eyebrow">Séance 19 · Mini-site V2</p>
+          <h1 id="hero-title">REWIRE — un programme structuré en quatre étapes</h1>
+          <p id="hero-text" class="hero-text">Une landing page dynamique pour présenter le programme et démontrer le passage du JSON au DOM.</p>
+          <div class="hero-actions">
+            <a id="hero-action" class="button button-primary" href="#ressources">Découvrir les quatre étapes</a>
+            <a class="button button-secondary" href="#methode">Voir la méthode</a>
+          </div>
+          <p class="validation-note"><span aria-hidden="true">✓</span> Profil professionnel documenté. Contenus du programme à valider.</p>
+        </div>
+        <div class="hero-visual" aria-hidden="true">
+          <div class="orbit orbit-one"></div>
+          <div class="orbit orbit-two"></div>
+          <img src="assets/images/illustration-hero.svg" alt="" width="560" height="420">
+        </div>
+      </div>
+    </section>
+
+    <section id="projet-auteur" class="section profile-section" aria-labelledby="author-title">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Le porteur du sujet</p>
+          <h2 id="author-title">Un projet de coaching transformé en production numérique</h2>
+          <p>Les informations de cette section proviennent de la fiche candidature transmise le 10 août 2026.</p>
+        </div>
+
+        <div class="profile-grid">
+          <article class="profile-card" aria-label="Profil professionnel de l’auteur">
+              <div id="author-initials" class="profile-initials" aria-hidden="true">MB</div>
+            <div>
+              <p class="profile-label">Auteur et porteur du sujet</p>
+              <h3 id="author-name">Mohamed BOUMRAH</h3>
+              <p id="author-role" class="profile-role">Master coach personnel et professionnel</p>
+              <p id="author-organization" class="profile-organization">DEEP PERFORMANCE</p>
+            </div>
+          </article>
+
+          <article class="intent-card">
+            <p class="profile-label">Intention professionnelle</p>
+            <p id="author-mission">Porter le programme REWIRE et structurer sa présence numérique.</p>
+            <h3>Objectif du Challenge 100 jours</h3>
+            <p id="author-objective">Gagner en autonomie pour suivre et gérer le programme REWIRE.</p>
+          </article>
+        </div>
+
+        <div class="profile-focus">
+          <div>
+            <p class="profile-label">Usages actuels</p>
+            <ul id="author-uses" class="compact-list"></ul>
+          </div>
+          <div>
+            <p class="profile-label">Progression recherchée</p>
+            <p id="author-development-need">Améliorer le suivi des activités, des clients et des prospects.</p>
+          </div>
+        </div>
+
+        <div class="section-heading project-heading">
+          <p class="eyebrow">Productions visées</p>
+          <h2>Quatre axes pour transformer l’intention en preuves</h2>
+        </div>
+        <div id="project-axes-grid" class="project-axes-grid" aria-live="polite"></div>
+      </div>
+    </section>
+
+    <section class="section section-soft" aria-labelledby="pillars-title">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Le cadre pédagogique</p>
+          <h2 id="pillars-title">Trois principes avant de produire</h2>
+        </div>
+        <div id="pillars-grid" class="card-grid card-grid-three" aria-live="polite"></div>
+      </div>
+    </section>
+
+    <section id="ressources" class="section" aria-labelledby="resources-title">
+      <div class="container">
+        <div class="section-heading heading-row">
+          <div>
+            <p class="eyebrow">JSON → fetch() → DOM</p>
+            <h2 id="resources-title">Les quatre étapes REWIRE</h2>
+            <p>Les cartes ci-dessous ne sont pas écrites dans le HTML. JavaScript les construit à partir de <code>data/data.json</code>.</p>
+          </div>
+          <span class="technical-chip">Données séparées</span>
+        </div>
+
+        <div class="test-panel" aria-labelledby="test-panel-title">
+          <div>
+            <strong id="test-panel-title">Banc d’essai des quatre états</strong>
+            <span>Choisissez un scénario pour produire une preuve visible.</span>
+          </div>
+          <div class="test-buttons" role="group" aria-label="Choisir un état de chargement">
+            <button type="button" data-state="loading">Chargement</button>
+            <button type="button" data-state="success">Succès</button>
+            <button type="button" data-state="empty">Vide</button>
+            <button type="button" data-state="error">Erreur</button>
+          </div>
+        </div>
+
+        <div id="resource-status" class="status status-loading" role="status" aria-live="polite" aria-atomic="true">
+          <span class="status-icon" aria-hidden="true"></span>
+          <span class="status-copy"><strong>Chargement</strong><span>Lecture du fichier JSON local…</span></span>
+        </div>
+        <div id="resources-grid" class="resource-grid" aria-live="polite" aria-busy="true"></div>
+      </div>
+    </section>
+
+    <section id="methode" class="section section-navy" aria-labelledby="method-title">
+      <div class="container">
+        <div class="section-heading section-heading-light">
+          <p class="eyebrow">Une progression vérifiable</p>
+          <h2 id="method-title">La méthode en six étapes</h2>
+          <p>Chaque étape sépare la proposition de l’IA, la décision du coach et la preuve produite.</p>
+        </div>
+        <ol id="method-list" class="method-grid"></ol>
+      </div>
+    </section>
+
+    <section id="validation" class="section section-soft" aria-labelledby="validation-title">
+      <div class="container validation-grid">
+        <div>
+          <p class="eyebrow">Contrôle humain obligatoire</p>
+          <h2 id="validation-title">Un programme crédible doit être clair, responsable et traçable</h2>
+          <p>Le site facilite la présentation. Il ne remplace ni l’expertise du coach ni la validation humaine du contenu.</p>
+          <ul id="validation-list" class="check-list"></ul>
+        </div>
+        <aside class="validation-card" aria-label="Règle de validation">
+          <img src="assets/images/validation-humaine.svg" alt="Bouclier symbolisant la validation humaine" width="220" height="220">
+          <blockquote id="validation-quote">L’IA propose. Le coach valide. Le workflow organise. Le livrable prouve.</blockquote>
+          <p id="validation-owner">Validation du programme : M. Mohamed BOUMRAH — à réaliser</p>
+        </aside>
+      </div>
+    </section>
+
+    <section id="faq" class="section" aria-labelledby="faq-title">
+      <div class="container faq-layout">
+        <div class="section-heading">
+          <p class="eyebrow">Questions fréquentes</p>
+          <h2 id="faq-title">Comprendre avant d’utiliser</h2>
+        </div>
+        <div id="faq-list" class="faq-list"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <strong>REWIRE-90-PROJECT</strong>
+        <p>Prototype pédagogique · Séance 19 · Cas réel du Module 06</p>
+      </div>
+      <p>Non publié · Aucun service worker actif · Aucune donnée personnelle collectée</p>
+    </div>
+  </footer>
+
+  <noscript>
+    <div class="noscript-message">JavaScript est nécessaire pour charger les données JSON et afficher les ressources.</div>
+  </noscript>
+</body>
+</html>

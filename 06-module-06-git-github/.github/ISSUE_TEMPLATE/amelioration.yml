@@ -1,0 +1,28 @@
+name: Amélioration REWIRE
+description: Encadrer une évolution du mini-site ou de sa documentation
+title: "[Amélioration] "
+labels: ["amelioration", "a-valider"]
+body:
+  - type: textarea
+    id: besoin
+    attributes:
+      label: Besoin
+      description: Quel problème concret faut-il résoudre ?
+    validations:
+      required: true
+  - type: textarea
+    id: resultat
+    attributes:
+      label: Résultat attendu
+      description: Décrivez le livrable observable.
+    validations:
+      required: true
+  - type: checkboxes
+    id: criteres
+    attributes:
+      label: Critères d’acceptation
+      options:
+        - label: Le contenu est validé humainement.
+        - label: Les tests sont documentés.
+        - label: Aucune donnée privée n’est ajoutée.
+        - label: La publication reste une décision distincte.

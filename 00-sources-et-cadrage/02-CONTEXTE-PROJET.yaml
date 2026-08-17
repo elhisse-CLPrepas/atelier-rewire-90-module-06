@@ -1,0 +1,80 @@
+projet:
+  identifiant: REWIRE-90-PROJECT
+  titre: "REWIRE — Landing page dynamique et cas Git/GitHub"
+  version: "V1-A-VALIDER"
+  statut: "PRET_POUR_VALIDATION_HUMAINE"
+  publication_autorisee: false
+
+responsabilites:
+  porteur_sujet: "M. Mohamed BOUMRAH"
+  organisation: "DEEP PERFORMANCE"
+  pilote_pedagogique: "Prof. Abderrahman EL HISSE — à confirmer"
+  validation_programme: "M. Mohamed BOUMRAH — obligatoire"
+  production_ia: "LUMEN-SUPERNOVA / Codex"
+
+intention:
+  probleme: "Présenter REWIRE et organiser son suivi dans un projet numérique traçable."
+  objectif_seance_19: "Séparer données et affichage dans une landing page dynamique."
+  objectif_module_06: "Versionner, contrôler et suivre le projet avec Git et GitHub."
+  message_central: "L’IA propose. Le coach valide. Le workflow organise. Le livrable prouve."
+
+public:
+  principal: "Adultes en démarche de transformation personnelle ou professionnelle — hypothèse à confirmer"
+  prerequis_site: "Aucun pour la consultation"
+  prerequis_atelier:
+    - "Savoir ouvrir un dossier dans VS Code"
+    - "Savoir lancer un serveur local"
+
+contenus:
+  programme:
+    - "Révélation"
+    - "Désactivation"
+    - "Construction"
+    - "Installation"
+  sections:
+    - "Accueil"
+    - "Projet de l’auteur"
+    - "Principes"
+    - "Étapes REWIRE"
+    - "Méthode technique"
+    - "Validation"
+    - "FAQ"
+
+source_auteur:
+  document: "Fiche candidature transmise le 10 août 2026"
+  identite_confirmee: "Mohamed BOUMRAH"
+  fonction_confirmee: "Master coach personnel et professionnel"
+  organisation_confirmee: "DEEP PERFORMANCE"
+  projet_confirme: "REWIRE"
+  livrable_confirme: "Landing page"
+  coordonnees_publiques: false
+  donnees_exclues:
+    - "Téléphone"
+    - "Emails"
+    - "Signatures"
+    - "Données clients et prospects"
+
+exigences_techniques:
+  json_local: true
+  fetch: true
+  dom_dynamique: true
+  etats_visibles: ["chargement", "succes", "vide", "erreur"]
+  serveur_local_obligatoire: true
+  pwa_activee: false
+  dependances_externes: false
+  responsive: true
+  accessibilite: true
+
+module_06:
+  depot_recommande: "atelier-rewire-90-module-06"
+  visibilite_initiale: "privé ou formation restreinte"
+  workflow: "Issue -> Branche -> Commit -> Pull request -> Contrôle -> Fusion -> Tag"
+  source_privee_dans_git: false
+
+decisions_humaines_requises:
+  - "Confirmer le public cible"
+  - "Valider la promesse et les quatre descriptions"
+  - "Préciser les modalités et les limites du coaching"
+  - "Valider le logo et l’identité visuelle"
+  - "Choisir le nom du futur dépôt GitHub"
+  - "Autoriser ou refuser la publication"

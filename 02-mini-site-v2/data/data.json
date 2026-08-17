@@ -1,0 +1,187 @@
+{
+  "meta": {
+    "project": "REWIRE-90-PROJECT",
+    "version": "V2-dynamique-a-valider",
+    "session": 19,
+    "moduleReuse": 6,
+    "status": "À valider",
+    "programValidation": "M. Mohamed BOUMRAH — contenus du programme à valider",
+    "sourceReview": "Affiche Séance 19 et fiche candidature analysées le 2026-08-10",
+    "lastEditorialReview": "2026-08-10"
+  },
+  "hero": {
+    "eyebrow": "Séance 19 · Mini-site V2 dynamique",
+    "title": "REWIRE — 90 jours pour structurer une transformation durable",
+    "text": "Un prototype de landing page pour présenter la méthode REWIRE, organiser le suivi du programme et conserver des preuves de progression.",
+    "actionLabel": "Découvrir les quatre étapes",
+    "actionTarget": "#ressources"
+  },
+  "author": {
+    "fullName": "Mohamed BOUMRAH",
+    "initials": "MB",
+    "role": "Master coach personnel et professionnel",
+    "organization": "DEEP PERFORMANCE",
+    "mission": "Porter le programme REWIRE et accompagner une progression personnelle et professionnelle structurée.",
+    "objective": "Gagner en autonomie pour suivre et gérer le programme REWIRE dans le cadre du Challenge 100 jours.",
+    "currentUses": [
+      "Utilisation actuelle de l’IA pour des activités de gestion",
+      "Préparation d’une landing page comme premier livrable",
+      "Organisation progressive des contenus et des preuves"
+    ],
+    "developmentNeed": "Devenir plus fluide dans le suivi des activités, des clients et des prospects.",
+    "publicDisplay": "Profil professionnel confirmé par la fiche candidature. Téléphone, emails et signatures volontairement exclus."
+  },
+  "projectAxes": [
+    {
+      "id": "presentation",
+      "number": "01",
+      "title": "Présenter REWIRE",
+      "text": "Clarifier la promesse, le public, les étapes et la valeur du programme dans une landing page lisible."
+    },
+    {
+      "id": "suivi",
+      "number": "02",
+      "title": "Organiser le suivi",
+      "text": "Préparer un cadre simple pour suivre les activités, les clients, les prospects et les actions à réaliser."
+    },
+    {
+      "id": "workflow",
+      "number": "03",
+      "title": "Installer un workflow",
+      "text": "Séparer les données, l’affichage, les tests, les corrections et les décisions humaines."
+    },
+    {
+      "id": "preuves",
+      "number": "04",
+      "title": "Conserver les preuves",
+      "text": "Documenter les versions, les tests et les validations afin de montrer la progression du projet."
+    }
+  ],
+  "pillars": [
+    {
+      "id": "intention",
+      "number": "01",
+      "title": "Clarifier l’intention",
+      "text": "Définir ce que le programme veut changer, pour quel public et avec quels résultats observables."
+    },
+    {
+      "id": "progression",
+      "number": "02",
+      "title": "Organiser la progression",
+      "text": "Transformer l’intention en étapes, actions, repères et points de contrôle."
+    },
+    {
+      "id": "validation",
+      "number": "03",
+      "title": "Valider humainement",
+      "text": "Faire confirmer les contenus, les limites, le vocabulaire et les conditions d’accompagnement avant diffusion."
+    }
+  ],
+  "resources": [
+    {
+      "id": "revelation",
+      "title": "Révélation",
+      "category": "Étape 1",
+      "description": "Mettre en lumière la situation de départ, l’intention de changement et les priorités de la personne accompagnée.",
+      "keyPoint": "Nommer clairement le point de départ et la direction souhaitée.",
+      "image": "assets/images/methode-revelation.svg",
+      "alt": "Illustration d’une lumière révélant une direction",
+      "validation": "Formulation de démonstration à valider par M. Mohamed BOUMRAH"
+    },
+    {
+      "id": "desactivation",
+      "title": "Désactivation",
+      "category": "Étape 2",
+      "description": "Identifier les habitudes, automatismes ou obstacles que la personne choisit de réduire ou de remplacer.",
+      "keyPoint": "Définir ce qui doit être arrêté, limité ou transformé.",
+      "image": "assets/images/methode-desactivation.svg",
+      "alt": "Illustration d’un bouton de désactivation et d’un chemin libéré",
+      "validation": "Formulation de démonstration à valider par M. Mohamed BOUMRAH"
+    },
+    {
+      "id": "construction",
+      "title": "Construction",
+      "category": "Étape 3",
+      "description": "Construire de nouveaux repères, routines et actions cohérentes avec l’objectif défini.",
+      "keyPoint": "Passer de l’intention à un plan d’action suivi.",
+      "image": "assets/images/methode-construction.svg",
+      "alt": "Illustration de blocs assemblés pour former une structure",
+      "validation": "Formulation de démonstration à valider par M. Mohamed BOUMRAH"
+    },
+    {
+      "id": "installation",
+      "title": "Installation",
+      "category": "Étape 4",
+      "description": "Répéter, suivre et ajuster les nouvelles pratiques afin de les intégrer dans la durée.",
+      "keyPoint": "Observer les progrès et corriger le plan avec méthode.",
+      "image": "assets/images/methode-installation.svg",
+      "alt": "Illustration d’une fusée symbolisant la mise en action durable",
+      "validation": "Formulation de démonstration à valider par M. Mohamed BOUMRAH"
+    }
+  ],
+  "method": [
+    {
+      "step": 1,
+      "title": "Cadrer le projet",
+      "text": "Définir le public, la promesse, les limites et la preuve attendue."
+    },
+    {
+      "step": 2,
+      "title": "Structurer les données",
+      "text": "Rassembler les contenus validables dans un JSON local séparé du HTML."
+    },
+    {
+      "step": 3,
+      "title": "Charger avec fetch()",
+      "text": "Lire les données sur localhost et vérifier la réponse HTTP."
+    },
+    {
+      "step": 4,
+      "title": "Créer le DOM",
+      "text": "Construire les cartes avec JavaScript et textContent."
+    },
+    {
+      "step": 5,
+      "title": "Tester quatre états",
+      "text": "Observer Chargement, Succès, Vide et Erreur sans inventer de résultat."
+    },
+    {
+      "step": 6,
+      "title": "Valider et versionner",
+      "text": "Faire relire le fond puis conserver les corrections dans Git et GitHub."
+    }
+  ],
+  "validation": {
+    "quote": "L’IA propose. Le coach valide. Le workflow organise. Le livrable prouve.",
+    "owner": "Validation du programme : M. Mohamed BOUMRAH — à réaliser",
+    "rules": [
+      "Confirmer la promesse, le public et le vocabulaire du programme.",
+      "Distinguer un accompagnement de coaching d’un avis médical ou psychologique.",
+      "Éviter toute garantie de résultat non démontrée.",
+      "Ne publier aucune donnée personnelle de client ou de prospect.",
+      "Documenter les tests et les corrections avant publication."
+    ]
+  },
+  "faq": [
+    {
+      "id": "definition",
+      "question": "Qu’est-ce que REWIRE-90-PROJECT ?",
+      "answer": "Un prototype de programme et de landing page fondé sur quatre étapes visibles dans l’affiche source. Le contenu détaillé doit être confirmé par M. Mohamed BOUMRAH."
+    },
+    {
+      "id": "usage",
+      "question": "À quoi sert ce mini-site ?",
+      "answer": "Il présente le projet, démontre la séparation JSON et affichage, puis sert de cas réel pour l’apprentissage de Git et GitHub dans le Module 06."
+    },
+    {
+      "id": "donnees",
+      "question": "Le site collecte-t-il des données personnelles ?",
+      "answer": "Non. Ce prototype ne contient aucun formulaire connecté et ne collecte aucune donnée. Les coordonnées de la fiche candidature sont exclues."
+    },
+    {
+      "id": "fetch",
+      "question": "Pourquoi faut-il utiliser localhost ?",
+      "answer": "La fonction fetch charge le JSON comme une ressource web. L’ouverture directe avec file:/// peut être bloquée par le navigateur."
+    }
+  ]
+}

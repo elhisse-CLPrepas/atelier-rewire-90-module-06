@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 220" role="img" aria-labelledby="title desc">
+  <title id="title">Installation</title><desc id="desc">Une fusée décolle au-dessus d’un cercle de progression</desc>
+  <rect width="360" height="220" rx="24" fill="#fff3e4"/>
+  <path d="M75 164a105 105 0 0 1 196-69" fill="none" stroke="#f3be7f" stroke-width="15" stroke-linecap="round"/>
+  <path d="m266 76 13 23-25 1" fill="none" stroke="#f28c18" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M179 42c41 27 49 79 0 127-49-48-41-100 0-127Z" fill="#f28c18"/><circle cx="179" cy="91" r="18" fill="#fff"/>
+  <path d="m156 143-32 30 38-6M202 143l32 30-38-6" fill="#0754a5"/>
+  <path d="M169 170l10 30 10-30" fill="#ef6a5b"/>
+</svg>

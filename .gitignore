@@ -1,0 +1,24 @@
+# Sources privées et archives
+00-sources-privees/
+*candidature*.docx
+*.zip
+
+# Secrets et configuration locale
+.env
+.env.*
+!.env.example
+
+# Dépendances et caches
+node_modules/
+.cache/
+
+# Rendus et fichiers temporaires
+qa/
+qa-*/
+*.tmp
+*.log
+
+# Système et éditeur
+.DS_Store
+Thumbs.db
+.vscode/settings.json

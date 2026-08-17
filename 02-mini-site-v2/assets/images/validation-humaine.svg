@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" role="img" aria-labelledby="title desc">
+  <title id="title">Validation humaine</title>
+  <desc id="desc">Bouclier vert portant une coche</desc>
+  <defs>
+    <linearGradient id="shield" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#54a86c"/><stop offset="1" stop-color="#277a43"/></linearGradient>
+  </defs>
+  <circle cx="120" cy="120" r="108" fill="#e5f6e9"/>
+  <circle cx="120" cy="120" r="86" fill="#ffffff" stroke="#add7b7" stroke-width="4"/>
+  <path d="M120 48c24 18 47 23 68 25v47c0 44-24 67-68 86-44-19-68-42-68-86V73c21-2 44-7 68-25Z" fill="url(#shield)" stroke="#1d6435" stroke-width="5"/>
+  <path d="m83 123 25 25 52-59" fill="none" stroke="#ffffff" stroke-width="14" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
