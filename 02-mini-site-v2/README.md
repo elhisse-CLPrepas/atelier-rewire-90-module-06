@@ -10,6 +10,9 @@ Ce dossier contient la landing page de démonstration produite à partir de l’
 - rendre visibles Chargement, Succès, Vide et Erreur ;
 - préparer la reprise du cas dans Git et GitHub au Module 06 ;
 - conserver la PWA inactive avant la Séance 20.
+- présenter une vidéo REWIRE avec des contrôles natifs et sans lecture automatique ;
+- afficher les visuels de la masterclass du 21 août 2026 ;
+- proposer des CTA contrôlés vers Facebook et TikTok.
 
 ## Lancement
 
@@ -40,4 +43,4 @@ Le déroulé complet est documenté dans `06-module-06-git-github/DEMONSTRATION-
 
 Le nom, la fonction, l’organisation et l’intention viennent de la fiche candidature. Les descriptions des quatre étapes sont des formulations de démonstration. M. Mohamed BOUMRAH doit les confirmer avant publication.
 
-Le prototype ne contient ni téléphone, ni email, ni signature, ni donnée de client ou de prospect.
+Le site ne collecte ni email, ni donnée de client ou de prospect. Les coordonnées professionnelles, le QR code et les portraits visibles dans les affiches ont été autorisés pour la démonstration pédagogique de la séance 23. L’animation d’introduction de la vidéo respecte la préférence système de réduction des mouvements.
