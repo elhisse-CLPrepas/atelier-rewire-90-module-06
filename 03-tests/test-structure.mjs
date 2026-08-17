@@ -12,6 +12,9 @@ const requiredFiles = [
   "assets/images/logo-rewire.svg", "assets/images/illustration-hero.svg",
   "assets/images/methode-revelation.svg", "assets/images/methode-desactivation.svg",
   "assets/images/methode-construction.svg", "assets/images/methode-installation.svg"
+  , "assets/media/video-presentation-rewire.mp4"
+  , "assets/media/affiche-master-classe-rewire-21-aout-2026.jpeg"
+  , "assets/media/affiche-programme-rewire-21-aout-2026.png"
 ];
 
 const module06Files = [
@@ -109,6 +112,27 @@ await test("Profil auteur rendu depuis le JSON", async () => {
   assert.match(html, /id="author-name"/);
   assert.match(javascript, /renderAuthor\(data\.author\)/);
   assert.match(javascript, /renderProjectAxes\(data\.projectAxes\)/);
+});
+
+await test("Médias REWIRE intégrés de manière accessible", async () => {
+  assert.match(html, /<video[^>]+controls/);
+  assert.doesNotMatch(html, /<video[^>]+autoplay/);
+  assert.match(html, /assets\/media\/video-presentation-rewire\.mp4/);
+  assert.match(html, /id="masterclass"/);
+  assert.match(html, /affiche-master-classe-rewire-21-aout-2026\.jpeg/);
+  assert.match(html, /affiche-programme-rewire-21-aout-2026\.png/);
+});
+
+await test("CTA sociaux sécurisés", async () => {
+  assert.match(html, /https:\/\/web\.facebook\.com\/reel\/972243289170969/);
+  assert.match(html, /https:\/\/www\.tiktok\.com\/@deep\.performance0\/video\/7674762831010483476/);
+  assert.match(html, /https:\/\/www\.tiktok\.com\/@deep\.performance0/);
+  const externalLinks = [...html.matchAll(/<a[^>]+href="https:\/\/[^>]+>/g)].map((match) => match[0]);
+  assert.ok(externalLinks.length >= 3);
+  for (const link of externalLinks) {
+    assert.match(link, /target="_blank"/);
+    assert.match(link, /rel="noopener noreferrer"/);
+  }
 });
 
 await test("Dossier Module 06 complet", async () => {

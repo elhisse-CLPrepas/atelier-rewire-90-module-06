@@ -1172,3 +1172,163 @@ code {
     transition-duration: 0.01ms !important;
   }
 }
+
+/* Présentation vidéo et médias de la masterclass */
+.media-section {
+  overflow: hidden;
+  background:
+    radial-gradient(circle at 75% 25%, rgba(243, 190, 127, 0.2), transparent 34%),
+    linear-gradient(135deg, #f7fbff, #eef5fa);
+}
+
+.media-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr);
+  gap: clamp(2rem, 5vw, 5rem);
+  align-items: center;
+}
+
+.media-copy {
+  margin-bottom: 0;
+}
+
+.social-actions,
+.masterclass-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.85rem;
+  align-items: center;
+  margin-top: 1.5rem;
+}
+
+.video-stage {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid rgba(7, 51, 95, 0.18);
+  border-radius: 1.5rem;
+  background: #020b16;
+  box-shadow: 0 1.6rem 4rem rgba(7, 51, 95, 0.22);
+  isolation: isolate;
+  transform: perspective(1000px) rotateY(-1.5deg) rotateX(0.5deg);
+}
+
+.rewire-video {
+  display: block;
+  width: 100%;
+  max-height: 70vh;
+  background: #020b16;
+}
+
+.video-flash {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  display: grid;
+  place-items: center;
+  pointer-events: none;
+  background:
+    radial-gradient(circle, rgba(255, 255, 255, 0.96) 0 2%, rgba(243, 190, 127, 0.82) 8%, rgba(7, 51, 95, 0.88) 34%, #020b16 72%);
+  transform-origin: center;
+  animation: rewire-flash-intro 1.45s cubic-bezier(0.22, 0.8, 0.25, 1) forwards;
+}
+
+.video-flash::before,
+.video-flash::after {
+  position: absolute;
+  width: 42%;
+  aspect-ratio: 1;
+  content: "";
+  border: 2px solid rgba(243, 190, 127, 0.8);
+  border-radius: 28% 72% 55% 45%;
+  box-shadow: 0 0 2rem rgba(243, 190, 127, 0.65), inset 0 0 2rem rgba(127, 207, 200, 0.35);
+  transform: rotate3d(1, 1, 0, 58deg);
+}
+
+.video-flash::after {
+  width: 28%;
+  border-color: rgba(127, 207, 200, 0.85);
+  transform: rotate3d(-1, 1, 0, 68deg) rotate(35deg);
+}
+
+.video-flash span {
+  z-index: 1;
+  color: #fff;
+  font-size: clamp(1.5rem, 5vw, 3.6rem);
+  font-weight: 900;
+  letter-spacing: 0.18em;
+  text-shadow: 0 0 1.5rem rgba(243, 190, 127, 0.95);
+  transform: translateZ(5rem);
+}
+
+@keyframes rewire-flash-intro {
+  0% { opacity: 1; transform: scale(1.35) rotate(4deg); }
+  68% { opacity: 1; transform: scale(1) rotate(0); }
+  100% { visibility: hidden; opacity: 0; transform: scale(0.92); }
+}
+
+.masterclass-section {
+  background: linear-gradient(180deg, #fff, #f5f8fb);
+}
+
+.poster-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: clamp(1.25rem, 4vw, 3rem);
+  align-items: start;
+}
+
+.poster-card {
+  overflow: hidden;
+  margin: 0;
+  border: 1px solid rgba(7, 51, 95, 0.13);
+  border-radius: 1.25rem;
+  background: #fff;
+  box-shadow: var(--shadow-small);
+}
+
+.poster-card img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: auto;
+}
+
+.poster-card figcaption {
+  padding: 1rem 1.15rem;
+  color: var(--navy, #07335f);
+  font-weight: 700;
+}
+
+.text-link {
+  color: var(--navy, #07335f);
+  font-weight: 800;
+  text-underline-offset: 0.25em;
+}
+
+@media (max-width: 860px) {
+  .media-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .video-stage {
+    transform: none;
+  }
+}
+
+@media (max-width: 640px) {
+  .poster-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .social-actions .button,
+  .masterclass-actions .button {
+    width: 100%;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .video-flash {
+    display: none;
+    animation: none;
+  }
+}
