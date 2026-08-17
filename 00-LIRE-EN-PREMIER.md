@@ -45,4 +45,4 @@ Ouvrir `http://localhost:8000`.
 
 La fiche candidature confirme le profil, le projet REWIRE, l’objectif d’autonomie et la landing page comme livrable. L’affiche confirme les quatre étapes. Elle ne donne pas leurs définitions détaillées. Les formulations du site sont donc des propositions éditoriales à valider par M. Mohamed BOUMRAH.
 
-Aucun dépôt distant n’a été créé. Aucune publication n’a été effectuée.
+Le dépôt distant est créé sur GitHub. La publication GitHub Pages est préparée par workflow, mais elle reste soumise à la validation humaine des contenus.

@@ -1,0 +1,45 @@
+name: Publier le mini-site sur GitHub Pages
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "02-mini-site-v2/**"
+      - ".github/workflows/pages.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  deployer:
+    name: Déployer sur GitHub Pages
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Récupérer le dépôt
+        uses: actions/checkout@v4
+
+      - name: Configurer GitHub Pages
+        uses: actions/configure-pages@v5
+
+      - name: Préparer le contenu publié
+        shell: bash
+        run: touch 02-mini-site-v2/.nojekyll
+
+      - name: Charger l’artefact du mini-site
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: 02-mini-site-v2
+
+      - name: Publier l’artefact
+        id: deployment
+        uses: actions/deploy-pages@v4

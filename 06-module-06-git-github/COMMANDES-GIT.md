@@ -25,7 +25,7 @@ git push -u origin main
 ```bash
 git switch -c feat/valider-etapes-rewire
 git status
-git add site/data/data.json docs
+git add 02-mini-site-v2/data/data.json 06-module-06-git-github
 git commit -m "content: préciser les quatre étapes REWIRE"
 git push -u origin feat/valider-etapes-rewire
 ```
