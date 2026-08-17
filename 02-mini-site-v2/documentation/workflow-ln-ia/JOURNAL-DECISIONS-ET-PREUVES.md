@@ -8,4 +8,4 @@
 | 3 | CONTRÔLÉ | `main` synchronisée à `a8f10f7`, branche locale créée | `publication/preparer-github-pages`, aucun commit ni push | Produire et tester |
 | 4 | CONTRÔLÉ | Médias et CTA intégrés ; contrôles automatisés 14/14 | Validation humaine reçue pour les tests locaux | Préparer le commit |
 | 5 | CONTRÔLÉ | 20 fichiers intégrés dans un commit local | Tests 14/14 ; aucun secret ; aucun push | Attendre autorisation distante |
-| 6 | EN COURS | Autorisation de liaison, push et PR reçue | Issue GitHub non créée ; PR prévue en brouillon | Contrôler et pousser |
+| 6 | CONTRÔLÉ | Branche distante poussée et PR #2 créée en brouillon | Issue simulée localement ; PR : https://github.com/elhisse-CLPrepas/atelier-rewire-90-module-06/pull/2 | Commencer la review après validation |

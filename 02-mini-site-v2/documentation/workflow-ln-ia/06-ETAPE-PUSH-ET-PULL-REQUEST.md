@@ -2,7 +2,7 @@
 
 Séance concernée : 23 pour la compréhension et 24 pour l’exécution
 
-Statut : **EN COURS**
+Statut : **CONTRÔLÉ**
 
 ## Objectif
 
@@ -59,7 +59,16 @@ gh pr create --draft --base main --head publication/preparer-github-pages
 
 ## Résultat observé
 
-À compléter après le push et la création de la Pull Request.
+```text
+URL du dépôt : https://github.com/elhisse-CLPrepas/atelier-rewire-90-module-06
+Remote origin : https://github.com/elhisse-CLPrepas/atelier-rewire-90-module-06.git
+Branche distante : publication/preparer-github-pages
+Issue GitHub : SIMULÉE par la fiche locale de l’étape 2
+Pull Request : https://github.com/elhisse-CLPrepas/atelier-rewire-90-module-06/pull/2
+État de la PR : BROUILLON
+Commits présentés : 4611947 et f2ae24b, plus la preuve documentaire finale de cette étape
+Tests déclarés : 14/14
+```
 
 ## Contrôle effectué
 
@@ -67,12 +76,12 @@ Contenu public contrôlé, historique contrôlé, tests 14/14, aucun secret dét
 
 ## Preuve conservée
 
-À compléter avec les URL de la branche et de la Pull Request.
+URL de la branche distante et URL de la Pull Request #2 consignées dans cette fiche.
 
 ## Erreur ou confusion rencontrée
 
-Aucune avant exécution.
+Deux tentatives initiales ont rencontré une indisponibilité GitHub `HTTP 503`. La reprise contrôlée a réussi sans créer de doublon.
 
 ## Prochaine action
 
-Pousser, ouvrir la PR en brouillon, puis attendre la review de l’étape 7.
+Attendre la validation de l’étape 6 avant de commencer la review de l’étape 7.
