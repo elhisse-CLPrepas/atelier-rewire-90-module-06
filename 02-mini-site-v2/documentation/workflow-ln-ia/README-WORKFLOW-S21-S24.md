@@ -7,6 +7,6 @@ Le parcours suit huit étapes avec un arrêt de validation humaine entre chaque 
 ## État actuel
 
 - Diagnostic : contrôlé.
-- Étape 1 : renseignée, en attente de validation humaine.
-- Étapes 2 à 8 : à faire.
-- Publication actuelle : GitHub Pages opérationnelle, à réévaluer dans le cadre du workflow standard.
+- Étapes 1 à 7 : contrôlées et documentées.
+- Étape 8 : contrôlée localement ; documentation finale à committer.
+- Publication : GitHub Pages opérationnelle en HTTPS.
